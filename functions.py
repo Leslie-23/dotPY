@@ -1,4 +1,4 @@
-# Filename: all_types_of_functions.py
+# Filename: functions.py
 
 # 1. Basic Function
 def greet():
