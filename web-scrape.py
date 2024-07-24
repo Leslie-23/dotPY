@@ -19,9 +19,9 @@ def extract_data(soup):
     data = []
     articles = soup.find_all('article')
     for article in articles:
-        # title = article.find('h2').text
+        title = article.find('h1').text
         link = article.find('a').get('href')
-        data.append({'link': link})
+        data.append({'title': title, 'link': link})
     return data
 
 def save_to_csv(data, filename):
